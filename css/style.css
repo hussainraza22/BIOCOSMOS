@@ -1,0 +1,248 @@
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/*------------global classes--------------*/
+
+a {
+  text-decoration: none;
+}
+/*-----x-------global classes---------x-----*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+}
+
+/*-----------nav-bar--------------*/
+
+.nav {
+  height: 0rem;
+  min-height: 100vh;
+  overflow: hidden; 
+}
+.nav .nav-brand a {
+  font-size: 1.8rem;
+  padding: 25.6px 16px;
+  display: block;
+  margin-left: 10px;
+  color: white;
+  position: relative;
+  left: 13px;
+}
+.nav-brand{
+    background: rgb(65, 174, 182);
+    display: block;
+    position: relative;
+    right: 25px;
+    transform: translateY(30%) skewX(-20deg);
+    width:230px;
+    z-index: -1;
+}
+.nav .nav-menu {
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+.nav .nav-items {
+  display: flex;
+  margin: 0%;
+  padding: 0px 2rem;
+}
+
+.nav .nav-items .nav-links {
+  padding: 1.9rem 1.5rem;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.nav .nav-links:hover {
+  background-color: #ffffff;
+  border-bottom: 3px solid rgb(39, 74, 172);
+  height: 100%;
+}
+.nav .nav-links:hover a{
+    color:black;
+}
+
+.nav-links a {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+.subs a {
+  padding: 5px 5px;
+  color: #ffffff;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+}
+.subs,
+.sign {
+  margin: 1.6rem 0rem !important;
+  padding: 0rem 1.5rem !important;
+  display: flex;
+  align-items: center;
+}
+.subs {
+  border-right: 1px solid white;
+}
+.sign {
+  border-left: 1px solid white;
+}
+.text-gray a {
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+  padding: 5px 30px;
+}
+.social a {
+  margin: 5px 13px;
+  font-size: 1.1rem;
+  color: black;
+}
+.searchbtn {
+  color: #ffffff;
+}
+
+#videobg {
+  position: absolute;
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.43 !important;
+}
+.nav-overlay {
+  /* position: absolute; */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* opacity: 0.5 !important; */
+}
+.text-box h1 a {
+  position: absolute;
+  width: 900px;
+  height: 100.87px;
+  left: 42px;
+  top: 355.92px;
+
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 40px;
+
+  color: #ffffff;
+}
+.text-box p {
+  position: absolute;
+  width: 420px;
+  height: 46.47px;
+  left: 160px;
+  top: 399.9px;
+
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* or 167% */
+  color: #e5e5e5;
+}
+.highlight h1 {
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  left: 42px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 40px;
+  height: 12px;
+  top: 299px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+#vertical-line {
+  position: absolute;
+  width: 35px;
+  height: 0px;
+  left: 110px;
+  top: 424px;
+  border: 1px solid #e5e5e5;
+}
+/* #horizontal-line{
+    position: absolute;
+width: 25px;
+height: 1px;
+border: 0.3px solid #E5E5E5;
+transform: rotate(90deg);
+left: 1153px;
+top: 37px;
+}
+#horizontal-line2{
+    position: absolute;
+width: 25px;
+height: -0.9px;
+border: 1px solid #E5E5E5;
+transform: rotate(90deg);
+left: 1303px;
+top: 38px;
+} */
+
+.date {
+  position: absolute;
+  width: 59px;
+  height: 17.42px;
+  left: 43px;
+  top: 417px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #e5e5e5;
+}
+/*---x--------nav-bar-----------x---*/
