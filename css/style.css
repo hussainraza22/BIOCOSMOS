@@ -35,15 +35,8 @@ ul {
   position: relative;
   left: 13px;
 }
-.nav-brand{
-    background: rgb(65, 174, 182);
-    display: block;
-    position: relative;
-    right: 25px;
-    transform: translateY(30%) skewX(-20deg);
-    width:230px;
-    z-index: -1;
-}
+
+
 .nav .nav-menu {
   justify-content: space-between;
   opacity: 0.8;
@@ -61,14 +54,10 @@ ul {
   position: relative;
 }
 
-.nav .nav-links:hover {
+.nav .nav-links: {
   background-color: #ffffff;
-  border-bottom: 3px solid rgb(39, 74, 172);
-  height: 100%;
 }
-.nav .nav-links:hover a{
-    color:black;
-}
+
 
 .nav-links a {
   color: #ffffff;
