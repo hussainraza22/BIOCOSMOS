@@ -109,6 +109,9 @@ ul {
   height: 100vh;
   object-fit: cover;
 }
+.vsc-controller{
+  display: none;
+}
 .overlay {
   position: absolute;
   background-color: black;
@@ -235,3 +238,12 @@ top: 38px;
   color: #e5e5e5;
 }
 /*---x--------nav-bar-----------x---*/
+
+.row{
+  display: flex;
+  margin: 0px 80px;
+}
+
+.row div{
+  padding: 0px 10px ;
+}
