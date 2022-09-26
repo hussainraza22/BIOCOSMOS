@@ -11,116 +11,190 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel = "icon" href = 
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
-        type = "image/x-icon">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 
 <body>
 
 
-    <!-- ------------------navigation--------------------- -->
-    <div class="hero">
+    <!-- ------------------ Hero navigation--------------------- -->
+    <div class="header">
 
-        <nav class="nav">
-            <video autoplay loop muted id="videobg" controls="false">
-                <source src="assets/Earth - 55990.mp4" type="video/mp4" aria-controls="false">
-                </source>
-            </video>
-            <div class="overlay"></div>
+        <div class="hero">
 
-            <div class="nav-menu flex-row nav-overlay">
-                <div class="nav-brand">
-                    <a href="#" class="text-gray">BIOCOSMOS</a>
+            <nav class="nav">
+                <video autoplay loop muted id="videobg">
+                    <source src="assets/3137475630.mp4" type="video/mp4" aria-controls="false">
+                    </source>
+                </video>
+                <div class="overlay"></div>
+
+                <div class="nav-menu flex-row nav-overlay">
+                    <div class="nav-brand">
+                        <a href="#" class="text-gray">BIOCOSMOS</a>
+                    </div>
+
+                    <div>
+                        <ul class="nav-items">
+                            <li class="nav-links">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="nav-links">
+                                <a href="#">Videos</a>
+                            </li>
+                            <li class="nav-links">
+                                <a href="#">Pictures</a>
+                            </li>
+                            <li class="nav-links">
+                                <a href="#">Podcast</a>
+                            </li>
+                            <li class="nav-links">
+                                <a href="#">About </a>
+                            </li>
+
+                            <li class="nav-links sign">
+                                <a href="#">Sign in </a>
+                            </li>
+                            <li class="nav-links subs">
+                                <a href="#">Subscribe </a>
+                            </li>
+
+                            <li class="nav-links searchbox">
+                                <a href="#" class="searchbtn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        </section>
+                    </div>
                 </div>
-                
-                <div>
-                    <ul class="nav-items">
-                        <li class="nav-links">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-links">
-                            <a href="#">Videos</a>
-                        </li>
-                        <li class="nav-links">
-                            <a href="#">Pictures</a>
-                        </li>
-                        <li class="nav-links">
-                            <a href="#">Podcast</a>
-                        </li>
-                        <li class="nav-links">
-                            <a href="#">About </a>
-                        </li>
-
-                        <li class="nav-links sign">
-                            <a href="#">Sign in </a>
-                        </li>
-                        <li class="nav-links subs">
-                            <a href="#">Subscribe </a>
-                        </li>
-
-                        <li class="nav-links searchbox">
-                            <a href="#" class="searchbtn">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                <div class="date">08.08.2022</div>
+                <div id="vertical-line"></div>
+                <div class="highlight">
+                    <h1>Latest</h1>
                 </div>
-            </div>
-            <div class="date">08.08.2022</div>
-            <div id="vertical-line"></div>
-            <div class="highlight">
-                <h1>Latest</h1>
-            </div>
-            <div class="text-box">
-                
-                <h1><a href="#">Pioneering a New Era
-                    of Human Health</a></h1>
-            <p>
-                Our scientists are decoding the human immune system to transform how we diagnose, treat, and prevent diseases for all people.
-            </p>
-            </div>
-        </nav>
+                <div class="text-box">
+
+                    <h1><a href="#">Pioneering a New Era
+                            of Human Health</a></h1>
+                    <p>
+                        Our scientists are decoding the human immune system to transform how we diagnose, treat, and prevent
+                        diseases for all people.
+                    </p>
+                </div>
+            </nav>
+        </div>
     </div>
+    
+    <!-- ----x-------------- blog list -----------------x---- -->
+    <section class="blogs container">
+        <div class="col-3">
 
-    <!-- ----x--------------navigation-----------------x---- -->
+            <article class="menu-article">
+                <img src="assets/3A832921-1A31-4AF3-9A1E2190FCC58AEE.webp" class="left-img" alt="">
+                <span class="img-title">
+                    Drug Use
+                </span>
+                <p>
+                    Our scientists are decoding the human immune system to transform how we diagnose, treat, and
+                    prevent
+                    diseases for all people.
+                </p>
+            </article>
+            <hr class="dot-seperater">
 
-    <div class="row">
-        <div class="col-4">
-            <div class="col-4">
-                <h3>Para 1</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
-            </div>
-            <div class="col-4">
-                <h3>Para 2</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
-            </div>
-            <div class="col-4">
-                <h3>Para 3</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
+            <article class="menu-article">
+                <h3 class="">
+                    RENEWABLE ENERGY
+                </h3>
+                <h2>
+                    Why Electric Vehicles Won’t Break the Grid
+                </h2>
+                <p>
+                    Lorem Ipsum, Lorem Ipsum, and others
+                </p>
+            </article>
+            <hr class="dot-seperater">
+
+            <article class="menu-article">
+                <img src="assets/3ADC9566-AABA-4ACD-ABD724B6B5D3CC5F.webp" class="left-img" alt="">
+                <span class="img-title">
+                    Drug Use
+                </span>
+                <p>
+                    Our scientists are decoding the human immune system to transform how we diagnose, treat, and
+                    prevent
+                    diseases for all people.
+                </p>
+            </article>
+            <hr class="dot-seperater">
+
+        </div>
+
+        <div class="col-6">
+            <img src="assets/17878279-B6DC-4232-ABC6972F3E4125EC.webp" class="center-img" alt="">
+            <span class="img-title">
+                Drug Use
+            </span>
+            <div class="main-desc">
+                <h1>
+                    The Purpose of Dolphins’ Mysterious Brain Net May Finally Be Understood
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iste amet ducimus dsnajkdjaskhd
+                </p>
             </div>
         </div>
-        
-        <div class="col-4">
-            <h3>Para 4</h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
-        </div>
-        <div>
-            <div class="col-4">
-                <h3>Para 5</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
-            </div>
-            <div class="col-4">
-                <h3>Para 6</h3>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at imperdiet ex, vel dignissim tortor. Nulla facilisi. Suspendisse eu consectetur lectus, in pulvinar nisl. Nullam mattis, ligula vel mollis malesuada, orci lectus auctor ex, vel feugiat libero est sit amet sem. Donec commodo justo ut dui sodales, fermentum sodales orci volutpat. In imperdiet, lorem nec pretium consectetur, metus quam lacinia augue, eget mattis ante lectus a nisi. Suspendisse cursus gravida mollis. Praesent commodo ac lorem sed scelerisque. Nunc ante sem, tempus non leo vel, congue commodo turpis. Praesent faucibus justo neque, nec ultrices ligula mollis in. Proin molestie mattis facilisis. In hac habitasse platea dictumst. Cras pretium id odio ac ultricies. Fusce aliquet nisl quis purus vestibulum aliquam. Phasellus dolor urna, iaculis sit amet porta vitae, pulvinar dignissim arcu. Etiam sed malesuada diam.
-            </div>
-        </div>
-        
-    </div>
+
+        <div class="col-3 right-bar">
+            <article class="menu-article">
+                <h3 class="">
+                    RENEWABLE ENERGY
+                </h3>
+                <h2>
+                    Why Electric Vehicles Won’t Break the Grid
+                </h2>
+                <p>
+                    Lorem Ipsum, Lorem Ipsum, and others
+                </p>
+            </article>
+            <hr class="dot-seperater">
+            <article class="menu-article">
+                <h3 class="">
+                    RENEWABLE ENERGY
+                </h3>
+                <h2>
+                    Why Electric Vehicles Won’t Break the Grid
+                </h2>
+                <p>
+                    Lorem Ipsum, Lorem Ipsum, and others
+                </p>
+            </article>
+            <hr class="dot-seperater">
+            <article class="menu-article">
+                <h3 class="">
+                    RENEWABLE ENERGY
+                </h3>
+                <h2>
+                    Why Electric Vehicles Won’t Break the Grid
+                </h2>
+                <p>
+                    Lorem Ipsum, Lorem Ipsum, and others
+                </p>
+            </article>
+            <hr class="dot-seperater">
 
 
+
+            <button onclick="myFunction()" id="myBtn">View All Stories</button>
+        </div>
+
+    </section>
 
 
     <!--custom javascript file-->
