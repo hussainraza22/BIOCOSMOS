@@ -27,7 +27,6 @@
     <div class="header">
 
         <div class="hero">
-
             <nav class="nav">
                 <video autoplay loop muted id="videobg">
                     <source src="assets/Earth - 55990.mp4" type="video/mp4" aria-controls="false">
@@ -302,15 +301,15 @@
         </div>
         <button class="btn-primary">More Video</button>
     </section>
-    <!-- ----x-------------- Video list -----------------x---- -->
 
+    <!-- ----x-------------- Podcast list -----------------x---- -->
     <section class="podcast">
         <h1 class="heading">
             <span>
                 podcast
             </span>
         </h1>
-        <div>
+        <div class="col-12 podcast-hero">
             <img src="assets/484FA146-8892-477F-B38D18775563CC9E_small.webp" alt="">
             <p>60-SECOND SCIENCE</p>
             <h1>What the Disease Feels Like, and Presidents Can't End Pandemics: COVID, Quickly, Episode 39
@@ -319,6 +318,8 @@
         </div>
         <audio src="sad"></audio>
         <div class="podcast-list">
+
+            <div class="col-6">
                 <h2>
                     Moth Wings Are Beautiful in Infrared Light
                 </h2>
@@ -350,7 +351,19 @@
         <button class="btn-primary">More Video</button>
     </section>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).bind('scroll', function(){
+                let gap = 260;
+                if($(window).scrollTop() > gap){
+                    $('.nav-menu').addClass('active');
+                }else{
+                    $('.nav-menu').removeClass('active');
+                }
+            });
+        });
+    </script>
     <!--custom javascript file-->
     <script src="./js/main.js"></script>
 </body>
