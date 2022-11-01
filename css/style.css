@@ -4,6 +4,7 @@
   --paragraph-font: Georgia, serif;
   --primary-color:  #2b6777;
   --secondary-color:  #52ab98;
+  --detail-font: "Brunel Poster", Georgia, serif;
 
 }
 
@@ -41,6 +42,7 @@ ul {
   color: white;
   position: relative;
   left: 13px;
+  font-family: var(--heading-font);
 }
 
 .nav .nav-menu {
@@ -68,8 +70,9 @@ ul {
   padding: 0px 2rem;
 }
 
+
 .nav .nav-items .nav-links {
-  padding: 30px 24px;
+  padding: 34px 24px;
   font-size: 1.05rem;
   position: relative;
   display: flex;
@@ -772,6 +775,16 @@ audio::-webkit-media-controls-panel {
 }
 .pic-header{
   margin: 150px 0px 20px 0px; 
+  font-family: var(--detail-font);
+  font-style: italic bold ;
+  font-weight: 500;
+  font-size: 72px;
+}
+
+.vid-detail h1{
+  font-size: 50px;
+  font-family: var(--heading-font);
+  font-style: none ;
 }
 
 .article-title{
@@ -894,4 +907,14 @@ button:hover {
 }
 .blogs, .videos, .podcast h2{
   color: #000000 !important;
+}
+
+@font-face {
+  font-family: 'Brunel Poster';
+  src: local('Brunel Poster Medium Italic'), local('Brunel-Poster-Medium-Italic'),
+      url('BrunelPoster-MediumItalic.woff2') format('woff2'),
+      url('BrunelPoster-MediumItalic.woff') format('woff'),
+      url('BrunelPoster-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
 }
