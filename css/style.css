@@ -85,6 +85,9 @@ ul {
   font-family: var(--paragraph-font);
   
 }
+.nav-links:hover {
+  color: var(--primary-color) !important;
+}
 
 
 
@@ -913,4 +916,17 @@ button:hover {
       url('BrunelPoster-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
+}
+ul li::after {
+  content: "";
+  width: 0%;
+  height: 1.7px;
+  background: rgb(14, 180, 64);
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+ul li:hover::after {
+  width: 100%;
 }
