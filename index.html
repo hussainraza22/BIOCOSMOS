@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BIOCOSMOS</title>
     <!--custom css file-->
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +16,10 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 </head>
 
@@ -27,7 +30,7 @@
     <div class="header">
 
         <div class="hero">
-            <nav class="nav">
+            <nav class="nav nav-home">
                 <video autoplay loop muted id="videobg">
                     <source src="assets/Earth - 55990.mp4" type="video/mp4" aria-controls="false">
                     </source>
@@ -36,34 +39,34 @@
 
                 <div class="nav-menu nav-overlay">
                     <div class="nav-brand">
-                        <a href="#" class="text-gray">BIOCOSMOS</a>
+                        <a href="index.html" class="text-gray">BIOCOSMOS</a>
                     </div>
 
                     <div>
                         <ul class="nav-items">
                             <li class="nav-links">
-                                <a href="#">Home</a>
+                                <a href="">Home</a>
                             </li>
                             <li class="nav-links">
-                                <a href="#">Videos</a>
+                                <a href="videos.html">Videos</a>
                             </li>
                             <li class="nav-links">
-                                <a href="#">Pictures</a>
+                                <a href="pictures.html">Pictures</a>
                             </li>
                             <li class="nav-links">
-                                <a href="#">Podcast</a>
+                                <a href="podcast.html">Podcast</a>
                             </li>
                             <li class="nav-links">
-                                <a href="#">About </a>
+                                <a href="about.html">About </a>
                             </li>
 
                             <li class="nav-links sign">
-                                <a href="#">Sign in </a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#signInModal" role='button'>Sign in
+                                </a>
                             </li>
                             <li class="nav-links subs">
                                 <a href="#">Subscribe </a>
                             </li>
-
                             <li class="nav-links searchbox">
                                 <a href="#" class="searchbtn">
                                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -92,20 +95,67 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php" style="border:1px solid #ccc">
+                        <div class="container">
+                            <h1>Sign Up</h1>
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember me
+                            </label>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                    Privacy</a>.</p>
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- ----x-------------- blog list -----------------x---- -->
     <section class="blogs container">
         <div class="col-3">
 
             <article class="menu-article">
-                <img src="assets/3A832921-1A31-4AF3-9A1E2190FCC58AEE.webp" class="left-img" alt="">
+                <img src="assets/neuro.webp" class="left-img" alt="" href>
                 <span class="img-title">
-                    DRUG USE
+                    NEUROSCIENCE
                 </span>
-                <h2>
-                    Chewing Consumes a Surprising Amount of Energy
-                </h2>
+                <a href="picture-details2.html">
+                    <h2>
+                        Color Is in the Eye, and Brain, of the Beholder
+                    </h2>
+                </a>
                 <p>
-                    Christopher Intagliata
+                    By Nicola Jones
                 </p>
             </article>
             <hr class="dot-seperater">
@@ -139,19 +189,24 @@
         </div>
 
         <div class="col-6">
-            <img src="assets/31DAD078-0AE2-43E6-9C39A711B0EB559A.webp" class="center-img" alt="">
-            <span class="img-title">
-                ANIMALS
+            <a href="picture-details.html" class="center-img">
+
+                <img src="assets/not real.webp" class="center-img" alt="">
+            </a>
+            <span class="img-title ">
+                QUANTUM PHYSICS
             </span>
             <div class="main-desc">
                 <h1>
-                    The Purpose of <br> Dolphins’ Mysterious<br> Brain Net May Finally<br> Be Understood
+                    The Universe Is Not Locally Real, and the Physics Nobel Prize Winners Proved It
                 </h1>
                 <p>
-                    Dolphins and whales experience a lot of pressure while<br> swimming, and a “wonderful net” of blood
-                    vessels may protect <br> their brain, new research shows
+                    Elegant experiments with entangled light have laid bare a profound mystery at the heart of
+                    reality.This is, of course, deeply contrary to our everyday experiences. To paraphrase Douglas
+                    Adams, the demise of local realism has made a lot of people very angry and been widely regarded as a
+                    bad move.
                 </p>
-                <p> Daniel Leonard</p>
+                <p> Daniel Garisto</p>
             </div>
         </div>
 
@@ -210,52 +265,63 @@
 
 
 
-            <button class="btn-primary">View All Stories</button>
+            <a href="pictures.html" class="d-flex justify-content-center w-100">
+                <button class="btn-primary">View All Stories</button>
+            </a>
         </div>
 
     </section>
 
     <!-- ----x-------------- Video list -----------------x---- -->
     <section class="videos">
-        <h1 class="heading">
+        <h5 class="heading">
             <span>
                 videos
             </span>
-        </h1>
+        </h5>
 
         <div class="video-article-list">
             <div class="col-6">
-                <video src="assets/Earth - 55990.mp4 " class="left-vid"></video>
+                <i class="fa fa-play fa-3x left-play" aria-hidden="true"></i>
+                <img src="assets/ved 1.webp" class="left-vid" alt="">
                 <span class="img-title">
                     ANIMALS
                 </span>
                 <div class="vid-disc">
-                    <h1>
-                        The Purpose of Dolphins’ Mysterious Brain Net May Finally Be Understood
-                    </h1>
+                    <h5>
+                        Researchers Make Nightmarish 'Coffee' with Invasive Sea Lampreys
+                    </h5>
                     <p>
-                        Dolphins and whales experience a lot of pressure while swimming, and a “wonderful net” of blood
-                        vessels may protect their brain, new research shows
+                        Why on Earth would you try to “brew” anything using parasitic fish that slurp the blood and guts
+                        out of other fish?
                     </p>
-                    <p> Daniel Leonard</p>
+                    <p>19 hours ago</p>
                 </div>
             </div>
             <div class="col-3">
 
                 <article class="menu-article">
-                    <img src="assets/3A832921-1A31-4AF3-9A1E2190FCC58AEE.webp" class="right-vid" alt="">
+                    <i class="fa fa-play fa-3x right-play" aria-hidden="true"></i>
+                    <a href="video-detail.html">
+                        <img src="assets/ved 2.webp" class="right-vid" alt="">
+                    </a>
                     <span class="img-title">
                         DRUG USE
                     </span>
-                    <h2>
-                        Chewing Consumes a Surprising Amount of Energy
-                    </h2>
+                    <a href="video-detail.html">
+
+                        <h2>
+                            Chewing Consumes a Surprising Amount of Energy
+                        </h2>
+                    </a>
                     <p>
                         Christopher Intagliata
                     </p>
                 </article>
 
                 <article class="menu-article">
+                    <i class="fa fa-play fa-3x right-play" aria-hidden="true"></i>
+
                     <img src="assets/CB1DD899-8BFD-429D-A7880AC653F2AD64.webp" class="right-vid2" alt="">
                     <span class="img-title">
                         ENGINEERING
@@ -272,6 +338,8 @@
             <div class="col-3">
 
                 <article class="menu-article">
+                    <i class="fa fa-play fa-3x right-play" aria-hidden="true"></i>
+
                     <img src="assets/3A832921-1A31-4AF3-9A1E2190FCC58AEE.webp" class="right-vid" alt="">
                     <span class="img-title">
                         DRUG USE
@@ -285,6 +353,8 @@
                 </article>
 
                 <article class="menu-article">
+                    <i class="fa fa-play fa-3x right-play" aria-hidden="true"></i>
+
                     <img src="assets/CB1DD899-8BFD-429D-A7880AC653F2AD64.webp" class="right-vid2" alt="">
                     <span class="img-title">
                         ENGINEERING
@@ -299,69 +369,167 @@
 
             </div>
         </div>
-        <button class="btn-primary">More Video</button>
+        <a href="videos.html" class="d-flex justify-content-center">
+
+            <button class="btn-primary">More Video</button>
+        </a>
     </section>
 
     <!-- ----x-------------- Podcast list -----------------x---- -->
     <section class="podcast">
-        <h1 class="heading">
+        <h5 class="heading">
             <span>
                 podcast
             </span>
-        </h1>
-        <div class="col-12 podcast-hero">
+        </h5>
+        <div class="col-12 podcast-hero d-flex">
             <img src="assets/484FA146-8892-477F-B38D18775563CC9E_small.webp" alt="">
-            <p>60-SECOND SCIENCE</p>
-            <h1>What the Disease Feels Like, and Presidents Can't End Pandemics: COVID, Quickly, Episode 39
-            </h1>
+            <p class="podcast-type">60-SECOND SCIENCE</p>
+            <h5 class=" d-flex text-align-center">What the Disease Feels Like, and Presidents Can't End Pandemics:
+                COVID, Quickly, Episode 39
+            </h5>
+
             <p>Full Transcript</p>
+
+            <audio src="assets/motivational-day-112790.mp3" controls class="audio-hero"></audio>
+            <hr class="w-50">
         </div>
         <audio src="sad"></audio>
-        <div class="podcast-list">
+        <div class="podcast-list row">
 
-            <div class="col-6">
-                <h2>
-                    Moth Wings Are Beautiful in Infrared Light
-                </h2>
-                <p>
-                    Daniel Lingenhöhl and Sasha Warren
-                </p>
-                <h2>
-                    Moth Wings Are Beautiful in Infrared Light
-                </h2>
-                <p>
-                    Daniel Lingenhöhl and Sasha Warren
-                </p>
+            <div class="col-6 d-flex flex-row  align-items-center podcast-border">
+                <div class="w-100 px-2 d-none">
+                    <audio src="assets/motivational-day-112790.mp3" controls class="audio w-100 mb-4"></audio>
+                </div>
+                <div class="align-self-start ">
+                    <i class="fa fa-play fa-1x audio-play" aria-hidden="true"></i>
+                </div>
+                <div class="px-0 ">
+
+                    <h5>
+                        Moth Wings Are Beautiful in Infrared Light
+                    </h5>
+                    <p class="text-start">
+                        Daniel Lingenhöhl and Sasha Warren
+                    </p>
+
+                </div>
+
             </div>
-            <div class="col-6">
-                <h2>
-                    Moth Wings Are Beautiful in Infrared Light
-                </h2>
-                <p>
-                    Daniel Lingenhöhl and Sasha Warren
-                </p>
-                <h2>
-                    Moth Wings Are Beautiful in Infrared Light
-                </h2>
-                <p>
-                    Daniel Lingenhöhl and Sasha Warren
-                </p>
+            <div class="col-6 d-flex flex-row  align-items-center podcast-border">
+                <div class="w-100 px-2 d-none">
+                    <audio src="assets/motivational-day-112790.mp3" controls class="audio w-100 mb-4"></audio>
+                </div>
+                <div class="align-self-start ">
+                    <i class="fa fa-play fa-1x audio-play" aria-hidden="true"></i>
+                </div>
+                <div class="px-0 ">
+                    <h5>
+                        Moth Wings Are Beautiful in Infrared Light
+                    </h5>
+                    <p class="text-start">
+                        Daniel Lingenhöhl and Sasha Warren
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-row  align-items-center podcast-border">
+                <div class="w-100 px-2 d-none">
+                    <audio src="assets/motivational-day-112790.mp3" controls class="audio w-100 mb-4"></audio>
+                </div>
+                <div class="align-self-start ">
+                    <i class="fa fa-play fa-1x audio-play" aria-hidden="true"></i>
+                </div>
+                <div class="px-0 ">
+                    <h5>
+                        Moth Wings Are Beautiful in Infrared Light
+                    </h5>
+                    <p class="text-start">
+                        Daniel Lingenhöhl and Sasha Warren
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 d-flex flex-row  align-items-center podcast-border">
+                <div class="w-100 px-2 d-none">
+                    <audio src="assets/motivational-day-112790.mp3" controls class="audio w-100 mb-4"></audio>
+                </div>
+                <div class="align-self-start ">
+                    <i class="fa fa-play fa-1x audio-play" aria-hidden="true"></i>
+                </div>
+                <div class="px-0 ">
+                    <h5>
+                        Moth Wings Are Beautiful in Infrared Light
+                    </h5>
+                    <p class="text-start">
+                        Daniel Lingenhöhl and Sasha Warren
+                    </p>
+                </div>
             </div>
         </div>
-        <button class="btn-primary">More Video</button>
+        <a href="podcast.html" class="d-flex justify-content-center">
+            <button class="btn-primary">More Podcasts</button>
+        </a>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- ----x-------------- footer -----------------x---- -->
+    <footer class="d-flex flex-column">
+        <div class="">
+            <h6 class="text-white">BIOCOSMOS</h6>
+        </div>
+
+
+        <div class="footer-items">
+            <!-- <ul class="footer-items"> -->
+            <!-- <li class="footer-links"> -->
+            <a href="" class="text-white">Terms of service</a>
+            <!-- </li> -->
+            <!-- <li class="footer-links"> -->
+            <a href="videos.html" class="text-white">Privacy policy</a>
+            <!-- </li> -->
+            <!-- <li class="footer-links"> -->
+            <a href="pictures.html" class="text-white">Security</a>
+            <!-- </li> -->
+            <!-- <li class="footer-links"> -->
+            <a href="podcast.html" class="text-white">About</a>
+            <!-- </li> -->
+            <!-- </ul> -->
+        </div>
+
+        <div class="justify-content-between">
+            <h5 class=""><img src="assets/Biocosmos Logo 2more-01 (1).png" alt="" width="170" height="170"></h5>
+            <div class="social-items">
+                <!-- <li class="footer-links"> -->
+                <a href="" class="text-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <!-- </li> -->
+                <!-- <li class="footer-links"> -->
+                <a href="videos.html" class="text-white"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <!-- </li> -->
+                <!-- <li class="footer-links"> -->
+                <a href="pictures.html" class="text-white"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <!-- </li> -->
+                <!-- <li class="footer-links"> -->
+                <a href="podcast.html" class="text-white"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <!-- </li> -->
+            </div>
+            <h6 class="copyright fs-6 text-white">All rights reserved M HUSSAIN RAZA 2020</h6>
+
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
     <script>
-        $(document).ready(function(){
-            $(window).bind('scroll', function(){
-                let gap = 260;
-                if($(window).scrollTop() > gap){
-                    $('.nav-menu').addClass('active');
-                }else{
-                    $('.nav-menu').removeClass('active');
-                }
-            });
+        $(window).bind('scroll', function () {
+            let gap = 260;
+            if ($(window).scrollTop() > gap) {
+                $('.nav-menu').addClass('active');
+            } else {
+                $('.nav-menu').removeClass('active');
+            }
         });
     </script>
     <!--custom javascript file-->
